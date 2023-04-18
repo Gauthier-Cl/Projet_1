@@ -1,107 +1,108 @@
-/*FORM*/
-#formulaire{
-    background-color: orchid;
-}
-
-#title_formulaire{
-    font-size: x-large;
-    color: whitesmoke;
-    display: flex;
-    justify-content: center;
-}
-
-#name,#mail,#phone{
-    width: 500px;
-}
-
-#boutton{
-    width: 150px;
-    height: 50px;
-    background-color: royalblue;
-    color: white;
-}
-
-::placeholder{
-    text-align: center;
-}
-.reponse{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* FOOTER */
-footer{
-    background-color: #d4f4ff;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav_footer{
-    display: flex;
-    flex-direction: column;
-}
-
-.nav_footer a{
-    text-decoration: none;
-    color: black;
-    line-height: 1.5em;
-}
-
-.texte_footer{
-    display: flex;
-    flex-direction: column;
-}
-
-.texte_footer span{
-    margin: 8%;
-}
-
 /* header */
 
 body {
-    margin: 0;
-    width: 100vw;
-
+  margin: 0;
+  width: 100vw;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    background-color: pink;
+header {
+  display: flex;
+  align-items: center;
+  background-color: pink;
 }
+
 .logo {
-    margin-left: 1rem;
-    height: 4rem;
-    width: 4rem;
+  margin-left: 1rem;
+  height: 4rem;
+  width: 4rem;
 }
 
-.titre{
-    margin-left: 1rem;
+.titre {
+  margin-left: 1rem;
 }
 
-nav{
-    width: 15%;
-    margin-left: 3rem;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 10rem;
+nav {
+  width: 15%;
+  margin-left: 3rem;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10rem;
 }
 
-nav a{
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
 
-.banner{
-    width: 100%;
-    height: 30rem;
-    display: flex;
-    background-color: aqua;
-    justify-content: center;
-    align-items: center;
+.banner {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
 }
 
 .texte-banner {
-    font-size: 3rem;
+  font-size: 3rem;
+}
+
+/*FORM*/
+
+#formulaire {
+  background-color: orchid;
+}
+
+#title_formulaire {
+  font-size: x-large;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+#name,
+#mail,
+#phone {
+  width: 500px;
+}
+
+#boutton {
+  width: 150px;
+  height: 50px;
+  background-color: royalblue;
+  color: white;
+}
+
+::placeholder {
+  text-align: center;
+}
+.reponse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #d4f4ff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_footer,
+.texte_footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_footer a {
+  text-decoration: none;
+  color: black;
+  line-height: 1.5em;
+}
+
+.texte_footer span {
+  margin: 8%;
 }
