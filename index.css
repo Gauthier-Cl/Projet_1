@@ -1,3 +1,42 @@
+/*FORM*/
+#formulaire{
+    display: block;
+    background-color: orchid;
+}
+
+#title_formulaire{
+    font-size: x-large;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+#name{
+    width: 500px;
+}
+
+#mail{
+    width: 500px;
+}
+
+#phone{
+    width: 500px;
+}
+
+#boutton{
+    width: 150px;
+    height: 50px;
+    background-color: royalblue;
+    color: white;
+}
+
+::placeholder{
+    text-align: center;
+}
+.reponse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 /* FOOTER */
 footer{
     background-color: #d4f4ff;
