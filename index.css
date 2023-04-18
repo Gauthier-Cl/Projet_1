@@ -1,6 +1,5 @@
 /*FORM*/
 #formulaire{
-    display: block;
     background-color: orchid;
 }
 
@@ -11,15 +10,7 @@
     justify-content: center;
 }
 
-#name{
-    width: 500px;
-}
-
-#mail{
-    width: 500px;
-}
-
-#phone{
+#name,#mail,#phone{
     width: 500px;
 }
 
