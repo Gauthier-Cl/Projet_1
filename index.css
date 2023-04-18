@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/*FORM*/
 #formulaire{
     display: block;
     background-color: orchid;
@@ -37,7 +37,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-=======
 /* FOOTER */
 footer{
     background-color: #d4f4ff;
@@ -113,5 +112,4 @@ nav a{
 
 .texte-banner {
     font-size: 3rem;
->>>>>>> main
 }
