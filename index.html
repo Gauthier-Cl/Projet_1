@@ -8,21 +8,29 @@
     <title>Document</title>
 </head>
 <body>
-   <form>
-            <div id="title_formulaire">
-                <h3>Contactez nous</h3>
+    <div id="formulaire">
+        <form>
+            <div class="reponse">
+                <div id="title_formulaire">
+                    <h3>Contactez nous</h3>
+                </div>
+                <div class="nom">                
+                    <input type="text" name="name" id="name" placeholder="Nom" required>
+                </div>
+                <div class="prenom">               
+                    <input type="text" name="name" id="name" placeholder="Prenom" required>
+                </div>
+                <div class="mail">               
+                    <input type="email" name="mail" id="mail" placeholder="Email" required>
+                </div>
+                <div class="phone">                
+                    <input type="text" name="number" id="phone" placeholder="Portable" required>
+                </div>
+                <div class="bouton_submit">
+                    <input type="button" name="button" id="boutton" value="Envoyer" required>
+                </div>
             </div>
-            <div class="nom">                
-                <input type="text" name="name" id="name" placeholder="Nom" required>
-            </div>
-            <div class="prenom">               
-                <input type="text" name="name" id="name" placeholder="Prenom" required>
-            </div>
-            <div class="mail">               
-                <input type="email" name="mail" id="mail" placeholder="Email" required>
-            </div>
-            <div class="phone">                
-                <input type="text" name="number" id="phone" placeholder="Portable" required>
-            </div> 
+        </form>      
+    </div>   
 </body>
 </html>
