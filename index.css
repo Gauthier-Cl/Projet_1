@@ -1,0 +1,26 @@
+/* FOOTER */
+footer{
+    background-color: #d4f4ff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_footer a{
+    text-decoration: none;
+    color: black;
+    line-height: 1.5em;
+}
+
+.texte_footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.texte_footer span{
+    margin: 8%;
+}
