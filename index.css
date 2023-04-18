@@ -43,3 +43,7 @@ nav a{
     justify-content: center;
     align-items: center;
 }
+
+.texte-banner {
+    font-size: 3rem;
+}
