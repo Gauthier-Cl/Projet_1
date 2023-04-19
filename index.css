@@ -12,6 +12,15 @@ header {
   background-color: rgb(243, 233, 235);
 }
 
+@media screen and (min-width:400px) {
+  .logo {
+    display: flex !important;
+  }
+  .banner{
+    height: 30rem !important;
+  }
+}
+
 .logo {
   margin-left: 1rem;
   height: 3rem;
