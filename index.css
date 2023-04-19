@@ -28,11 +28,16 @@ nav {
   justify-content: space-around;
 }
 
-nav a {
+.lien_header {
   text-decoration: none;
   color: black;
   font-weight: 700;
   border-bottom: 2px solid;
+}
+
+.lien_header:hover{
+  transform: scale(1.1);
+  transition-duration: 0.1s;
 }
 
 .banner {
