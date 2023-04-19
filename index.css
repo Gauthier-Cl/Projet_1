@@ -55,6 +55,74 @@ nav {
   font-size: 3rem;
 }
 
+     /* Cards-Bike */
+.main-news {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.main-news-container {
+  flex-wrap: wrap;
+}
+
+.main-news-container {
+  margin: 45px auto;
+  display: flex;
+ justify-content: space-around;
+  max-width: 1100px;
+}
+
+ .main-news-container > div {
+  position: relative;
+  padding: 20px;
+}
+
+.mn-pic img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px #888;
+} 
+
+.main-news-container h4 {
+  margin: 16px 0;
+  text-align: left;
+}
+
+.main-news-container p {
+  text-align: left;
+  font-size: 0.8rem;
+  line-height: 20px;
+  margin-bottom: 45px;
+}
+
+.link {
+ text-align: left;
+ position: absolute;
+ bottom: 0;
+}
+
+.main-news-container a {
+  text-transform: uppercase;
+  color: rgb(95, 4, 170);
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.main-news a:hover {
+  color: rgb(180, 180, 1);
+}
+
+.main-news i {
+  transform: translate(5px);
+}
+
 /*FORM*/
 
 #formulaire {
