@@ -60,7 +60,6 @@ nav {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
   list-style: none;
   text-decoration: none;
 }
@@ -136,7 +135,7 @@ nav {
   display: flex;
   justify-content: center;
   text-decoration: underline;
-  margin-top: 3.125rem;
+  margin-top: 2.125rem;
 }
 
 #name,
@@ -152,7 +151,7 @@ nav {
 #boutton {
   width: 150px;
   height: 50px;
-  background-color: grey;
+  background-color: rgb(95, 4, 170);
   color: white;
   margin-top: 15px;
   border-radius: 4px;
@@ -168,6 +167,9 @@ nav {
   align-items: center;
 }
 
+hr{
+  width: 80%;
+}
 /* FOOTER */
 
 footer {
