@@ -36,7 +36,7 @@ nav {
   border-bottom: 2px solid;
 }
 
-.lien_header:hover{
+.lien_header:hover {
   transform: scale(1.1);
   transition-duration: 0.1s;
 }
@@ -55,7 +55,7 @@ nav {
   font-size: 3rem;
 }
 
-     /* Cards-Bike */
+/* Cards-Bike */
 .main-news {
   margin: 0;
   padding: 0;
@@ -72,11 +72,11 @@ nav {
 .main-news-container {
   margin: 45px auto;
   display: flex;
- justify-content: space-around;
+  justify-content: space-around;
   max-width: 1100px;
 }
 
- .main-news-container > div {
+.main-news-container>div {
   position: relative;
   padding: 20px;
 }
@@ -86,7 +86,7 @@ nav {
   width: 100%;
   border-radius: 3px;
   box-shadow: 0 2px 10px #888;
-} 
+}
 
 .main-news-container h4 {
   margin: 16px 0;
@@ -101,9 +101,9 @@ nav {
 }
 
 .link {
- text-align: left;
- position: absolute;
- bottom: 0;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
 }
 
 .main-news-container a {
@@ -161,15 +161,27 @@ nav {
 ::placeholder {
   text-align: center;
 }
+
 .reponse {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-hr{
+hr {
   width: 80%;
 }
+
+@media only screen and (max-width: 768px) {
+
+  #name,
+  #mail,
+  #phone {
+    width: 20em;
+  }
+
+}
+
 /* FOOTER */
 
 footer {
@@ -198,12 +210,12 @@ footer {
   margin: 8%;
 }
 
-.logo_footer img{
+.logo_footer img {
   width: 45%;
   height: 45%;
 }
 
-.logo_footer{
+.logo_footer {
 
   width: 50%;
   text-align: center;
