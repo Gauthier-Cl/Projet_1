@@ -61,7 +61,7 @@ nav {
   display: flex;
   background-image: url("https://media.routard.com/image/82/2/amsterdam.1475822.c1000x300.jpg");
   filter: brightness(75%);
-  background-position: top;
+  background-position: bottom;
   justify-content: center;
   align-items: center;
 }
