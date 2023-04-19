@@ -1,3 +1,74 @@
+
+/*FORM*/
+#formulaire{
+    display: block;
+    background-color: white;
+    height: 20rem;
+    padding: 3.125rem;
+}
+
+#title_formulaire{
+    font-size: x-large;
+    color: grey;
+    display: flex;
+    justify-content: center; 
+    text-decoration: underline;   
+}
+
+#name{
+    width: 21.875rem;    
+    border: solid 1px grey;
+    border-radius: 3px;
+    height: 1.25rem;  
+}
+
+#mail{
+    width: 21.875rem;
+    border: solid 1px grey;
+    border-radius: 3px;
+    height: 1.25rem;  
+}
+
+#phone{
+    width: 21.875rem;
+    border: solid 1px grey;
+    border-radius: 3px; 
+    height: 1.25rem;   
+}
+
+#boutton{
+    width: 9.375rem;
+    height: 3.125rem;
+    background-color: gray;
+    color: white;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+
+::placeholder{
+    text-align: center;
+}
+.reponse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reponse{
+    margin-top: 2rem;
+}
+
+.nom,.prenom,.mail,.phone{
+    margin-bottom: 0.313rem;    
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #d4f4ff;
+    display: flex;
+    justify-content: space-between;
+=======
 /* header */
 
 body {
@@ -33,6 +104,7 @@ nav a {
   text-decoration: none;
   color: black;
   font-weight: 700;
+
 }
 
 .banner {
