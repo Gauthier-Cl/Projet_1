@@ -86,23 +86,37 @@ nav a {
 /* FOOTER */
 
 footer {
-  background-color: #d4f4ff;
+  background-color: #222222;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  color: white;
+  padding: 2%;
+
 }
 
 .nav_footer,
 .texte_footer {
   display: flex;
   flex-direction: column;
+  margin-left: 0rem;
 }
 
 .nav_footer a {
   text-decoration: none;
-  color: black;
-  line-height: 1.5em;
+  color: #e3e3e3;
 }
 
 .texte_footer span {
   margin: 8%;
+}
+
+.logo_footer img{
+  width: 45%;
+  height: 45%;
+}
+
+.logo_footer{
+
+  width: 50%;
+  text-align: center;
 }
