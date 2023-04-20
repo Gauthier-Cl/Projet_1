@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/logos/logo.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,9 +17,9 @@
 </head>
 
 <body>
-       
+
     <header>
-        <img class="logo" src="logo.png">
+        <img class="logo" src="./assets/logos/logo.png">
         <h1 class="titre">RentaBike</h1>
         <nav class="nav">
             <a class="lien_header" href="#">Infos</a>
@@ -26,88 +27,91 @@
         </nav>
     </header>
 
-    <div class="banner"></div>
+    <section class="banner"></section>
 
     <section class="main-news">
         <div class="main-news-container">
-            <div class="news">
-                <img class="mn-pic" src="./img/bike1.png" alt="reunion" width="300px" height="200px">
+            <article class="news">
+                <img class="mn-pic" src="./assets/img/bike1.png" alt="reunion" width="300px" height="200px">
                 <h4> Speed Bike model 438</h4>
                 <p>Traverser la ville à toute allure</p>
                 <a class="link" href="www.google.com">Louer moi <i class="fas fa-angle-right"></i></a>
-            </div>
+            </article>
 
-            <div class="news">
-                <img class="mn-pic" src="./img/bike2.png" alt="reunion" width="300px" height="200px">
+            <article class="news">
+                <img class="mn-pic" src="./assets/img/bike2.png" alt="reunion" width="300px" height="200px">
                 <h4> Chill Bike model 324</h4>
                 <p>Profitons de la vue impressionante</p>
                 <a class="link" href="www.google.com">Louer moi <i class="fas fa-angle-right"></i></a>
-            </div>
+            </article>
 
-            <div class="news">
-                <img class="mn-pic" src="./img/bike3.png" alt="reunion" width="300px" height="200px">
+            <article class="news">
+                <img class="mn-pic" src="./assets/img/bike3.png" alt="reunion" width="300px" height="200px">
                 <h4> Dive Bike model 638</h4>
-                <p>Profitons de la vue  impressionante</p>
+                <p>Profitons de la vue impressionante</p>
                 <a class="link" href="www.google.com">Louer moi <i class="fas fa-angle-right"></i></a>
-            </div>
-            <div class="news">
-                <img class="mn-pic" src="./img/bike4.png" alt="reunion" width="300px" height="200px">
+            </article>
+            <article class="news">
+                <img class="mn-pic" src="./assets/img/bike4.png" alt="reunion" width="300px" height="200px">
                 <h4> Speed Bike model 438</h4>
                 <p>Faites du sport en détente</p>
                 <a class="link" href="www.google.com">Louer moi <i class="fas fa-angle-right"></i></a>
-            </div>
-            <div class="news">
-                <img class="mn-pic" src="./img/bike5.png" alt="reunion" width="300px" height="200px">
-                <h4> Sport  Urban model 438</h4>
+            </article>
+            <article class="news">
+                <img class="mn-pic" src="./assets/img/bike5.png" alt="reunion" width="300px" height="200px">
+                <h4> Sport Urban model 438</h4>
                 <p>Traverser la ville à toute allure</p>
                 <a class="link" href="www.google.com">Louer moi <i class="fas fa-angle-right"></i></a>
-            </div>
-            <div class="news">
-                <img class="mn-pic" src="./img/bikeelec.png" alt="reunion" width="300px" height="200px">
+            </article>
+            <article class="news">
+                <img class="mn-pic" src="./assets/img/bikeelec.png" alt="reunion" width="300px" height="200px">
                 <h4> Le vélo à assitance électrique</h4>
                 <p>Parcourer la ville en toute sérenité</p>
                 <a class="link" href="www.google.com">Louer moi <i class="fas fa-angle-right"></i></a>
-            </div>
+            </article>
         </div>
-    </section>     
-
-    <hr>
+    </section>
     
-    <div id="formulaire">
-        <form>
-            <div class="reponse">
-                <div id="title_formulaire">
-                    <h3>Contactez nous</h3>
+        <hr>
+        
+        <div id="formulaire">
+            <form>
+                <div class="reponse">
+                    <div id="title_formulaire">
+                        <h3>Contactez nous</h3>
+                    </div>
+                    <div class="nom">                
+                        <input type="text" name="name" id="name" placeholder="Nom" required>
+                    </div>
+                    <div class="prenom">               
+                        <input type="text" name="name" id="name" placeholder="Prenom" required>
+                    </div>
+                    <div class="mail">               
+                        <input type="email" name="mail" id="mail" placeholder="Email" required>
+                    </div>
+                    <div class="phone">                
+                        <input type="text" name="number" id="phone" placeholder="Portable" required>
+                    </div>
+                    <div class="bouton_submit">
+                        <input type="button" name="button" id="boutton" value="Envoyer" required>
+                    </div>
                 </div>
-                <div class="nom">                
-                    <input type="text" name="name" id="name" placeholder="Nom" required>
-                </div>
-                <div class="prenom">               
-                    <input type="text" name="name" id="name" placeholder="Prenom" required>
-                </div>
-                <div class="mail">               
-                    <input type="email" name="mail" id="mail" placeholder="Email" required>
-                </div>
-                <div class="phone">                
-                    <input type="text" name="number" id="phone" placeholder="Portable" required>
-                </div>
-                <div class="bouton_submit">
-                    <input type="button" name="button" id="boutton" value="Envoyer" required>
-                </div>
-            </div>
-        </form>      
-    </div>
+            </form>      
+        </div>
+    </main>
 
     <footer class="footer">
         <nav id="nav_footer">
-            <a href="#">Qui sommes nous ?</a>
-            <a href="#">Rejoignez nous</a>
-            <a href="#">FAQ</a>
-            <a href="#">Nous Contacter</a>
-            <a href="#">Mentions Légales</a>
+            <ul>
+                <li><a href="#">Qui sommes nous ?</a></li>
+                <li><a href="#">Rejoignez nous</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Nous Contacter</a></li>
+                <li><a href="#">Mentions Légales</a></li>
+            </ul>
         </nav>
         <div class="logo_footer">
-            <img src="rentabike.png" alt="logo rent a bike">
+            <img src="./assets/logos/rentabike.png" alt="logo rent a bike">
             <div class="desc_footer">
                 <p>2023 rent a bike all rights reserved</p>
             </div>
@@ -115,7 +119,8 @@
         <div class="texte_footer">
             <span>Rentabike.com</span>
             <span>RentaBike, impossible de s'en passer</span>
-        </div> 
+        </div>
     </footer>
 </body>
+
 </html>
