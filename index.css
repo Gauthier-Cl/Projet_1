@@ -248,4 +248,12 @@ footer {
   .desc_footer {
     text-align: left;
   }
+  #nav_footer,
+.texte_footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0rem;
+  color: #e3e3e3;
+  width: 100%;
+}
 }
