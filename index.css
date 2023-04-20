@@ -61,7 +61,6 @@ nav {
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
 }
 
 
@@ -104,6 +103,7 @@ nav {
  text-align: left;
  position: absolute;
  bottom: 0;
+ text-decoration: none;
 }
 
 .main-news-container a {
@@ -112,6 +112,7 @@ nav {
   font-size: 0.7rem;
   letter-spacing: 1px;
   font-weight: 900;
+  font-family: "Montserrat", sans-serif;
 }
 
 .main-news a:hover {
