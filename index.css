@@ -3,7 +3,7 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
- }
+}
 
 header {
   display: flex;
@@ -59,8 +59,6 @@ nav {
   font-size: 3rem;
 }
 
-
-
 @media screen and (min-width: 400px) {
   .logo {
     display: flex !important;
@@ -90,7 +88,6 @@ nav {
 }
 
 .main-news-container > div {
-
   position: relative;
   padding: 20px;
 }
@@ -187,13 +184,11 @@ hr {
 }
 
 @media only screen and (max-width: 768px) {
-
   #name,
   #mail,
   #phone {
     width: 20em;
   }
-
 }
 
 /* FOOTER */
@@ -212,6 +207,7 @@ footer {
   flex-direction: column;
   margin-left: 0rem;
   color: #e3e3e3;
+  width: 20%;
 }
 
 #nav_footer a {
@@ -229,33 +225,27 @@ footer {
 }
 
 .logo_footer {
-
-
-
   width: 50%;
   text-align: center;
 }
 
-
 /* Footer mobile */
 @media screen and (max-width: 767px) {
-
-  footer{
+  footer {
     display: block;
   }
 
-  .logo_footer img{
+  .logo_footer img {
     margin-top: 5%;
     width: 100%;
     height: 100%;
   }
 
-  .texte_footer span{
-    margin:0%
+  .texte_footer span {
+    margin: 0%;
   }
 
-  .desc_footer{
+  .desc_footer {
     text-align: left;
   }
 }
-
