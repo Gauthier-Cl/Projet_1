@@ -26,7 +26,8 @@
             <a class="lien_header" href="#formulaire">Contact </a>
         </nav>
     </header>
-
+    <main>
+        
     <div class="banner"></div>
 
     <section class="main-news">
@@ -71,41 +72,44 @@
             </article>
         </div>
     </section>
-
-    <hr>
-
-    <div id="formulaire">
-        <form>
-            <div class="reponse">
-                <div id="title_formulaire">
-                    <h3>Contactez nous</h3>
+    
+        <hr>
+        
+        <div id="formulaire">
+            <form>
+                <div class="reponse">
+                    <div id="title_formulaire">
+                        <h3>Contactez nous</h3>
+                    </div>
+                    <div class="nom">                
+                        <input type="text" name="name" id="name" placeholder="Nom" required>
+                    </div>
+                    <div class="prenom">               
+                        <input type="text" name="name" id="name" placeholder="Prenom" required>
+                    </div>
+                    <div class="mail">               
+                        <input type="email" name="mail" id="mail" placeholder="Email" required>
+                    </div>
+                    <div class="phone">                
+                        <input type="text" name="number" id="phone" placeholder="Portable" required>
+                    </div>
+                    <div class="bouton_submit">
+                        <input type="button" name="button" id="boutton" value="Envoyer" required>
+                    </div>
                 </div>
-                <div class="nom">
-                    <input type="text" name="name" id="name" placeholder="Nom" required>
-                </div>
-                <div class="prenom">
-                    <input type="text" name="name" id="name" placeholder="Prenom" required>
-                </div>
-                <div class="mail">
-                    <input type="email" name="mail" id="mail" placeholder="Email" required>
-                </div>
-                <div class="phone">
-                    <input type="text" name="number" id="phone" placeholder="Portable" required>
-                </div>
-                <div class="bouton_submit">
-                    <input type="button" name="button" id="boutton" value="Envoyer" required>
-                </div>
-            </div>
-        </form>
-    </div>
+            </form>      
+        </div>
+    </main>
 
     <footer class="footer">
         <nav id="nav_footer">
-            <a href="#">Qui sommes nous ?</a>
-            <a href="#">Rejoignez nous</a>
-            <a href="#">FAQ</a>
-            <a href="#">Nous Contacter</a>
-            <a href="#">Mentions Légales</a>
+            <ul>
+                <li><a href="#">Qui sommes nous ?</a></li>
+                <li><a href="#">Rejoignez nous</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Nous Contacter</a></li>
+                <li><a href="#">Mentions Légales</a></li>
+            </ul>
         </nav>
         <div class="logo_footer">
             <img src="rentabike.png" alt="logo rent a bike">
