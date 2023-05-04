@@ -1,11 +1,18 @@
-/* header */
+* {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
 
+/* -------------------------------------- HEADER -------------------------------------- */
 header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
   display: flex;
   align-items: center;
   background-color: rgb(243, 233, 235);
@@ -15,7 +22,6 @@ header {
   margin-left: 1rem;
   height: 3rem;
   width: 3rem;
-  display: none;
 }
 
 .titre {
@@ -24,7 +30,7 @@ header {
   border: 3px solid;
 }
 
-nav {
+.nav-bar {
   display: flex;
   justify-content: space-around;
   gap: 0rem 1rem;
@@ -32,28 +38,206 @@ nav {
   margin-left: auto;
 }
 
-.lien_header {
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+li {
+  list-style: none;
+}
+
+.lien-header {
   text-decoration: none;
   color: black;
   font-weight: 700;
   border-bottom: 2px solid;
 }
 
-.lien_header:hover {
-  transform: scale(1.1);
-  transition-duration: 0.1s;
+.lien-header:hover {
+  transition: 0.3s ease-out;
+  color: rgb(82, 165, 15);
 }
 
-.banner {
-  width: 100%;
-  height: 20rem;
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: black;
+}
+
+@media (max-width: 1000px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 48px;
+    gap: 20px;
+    padding: 30px 0;
+    flex-direction: column;
+    background-color: #e5cdd2;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  .lien-header {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+/* ********************** silde show / Carousel****************** */
+/* ********************** silde show / Carousel****************** */
+.slider {
+  background-color: #222222;
+  position: relative;
+  transition: 0.5;
+  height: 40rem;
   display: flex;
-  background-image: url("https://media.routard.com/image/82/2/amsterdam.1475822.c1000x300.jpg");
-  filter: brightness(75%);
-  background-position: bottom;
   justify-content: center;
   align-items: center;
 }
+.slider .silde-show {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 40rem;
+  background-color: #888;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .silde-show img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider #right {
+  position: absolute;
+  top: 50%;
+  right: 10rem;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 2;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.slider #right:hover,
+.slider #left:hover {
+  background-color: rebeccapurple;
+}
+.slider #left {
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+  transform: translate(50%, -50%);
+  z-index: 2;
+  background-color: white;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.5;
+}
+
+.slider #right::before {
+  position: absolute;
+  content: "";
+  top: 35%;
+  right: 40%;
+  width: calc(4rem / 4);
+  height: calc(4rem / 4);
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  transform: rotate(50deg);
+}
+
+.slider #left::before {
+  position: absolute;
+  content: "";
+  top: 35%;
+  left: 40%;
+  width: calc(4rem / 4);
+  height: calc(4rem / 4);
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+
+  transform: rotate(230deg);
+}
+
+.slider #dots {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.slider #dots div {
+  border-radius: 50%;
+  background-color: white;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .slider #right,
+  #left {
+    display: none;
+  }
+}
+/* Medium */
+@media (max-width: 1200px) {
+  .slider #right {
+    right: 1rem;
+  }
+  .slider #left {
+    left: 1rem;
+  }
+}
+
+/* ********************** silde show / Carousel****************** */
+/* ********************** silde show / Carousel****************** */
 
 .texte-banner {
   font-size: 3rem;
@@ -67,7 +251,9 @@ nav {
     height: 30rem !important;
   }
 }
-/* Cards-Bike */
+
+/* -------------------------------------- CARDS-BIKE -------------------------------------- */
+
 .main-news {
   margin: 0;
   padding: 0;
@@ -111,10 +297,10 @@ nav {
 }
 
 .link {
- text-align: left;
- position: absolute;
- bottom: 0;
- text-decoration: none;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
 }
 
 .main-news-container a {
@@ -134,7 +320,7 @@ nav {
   transform: translate(5px);
 }
 
-/*FORM*/
+/* -------------------------------------- FORM -------------------------------------- */
 
 #formulaire {
   background-color: white;
@@ -192,7 +378,7 @@ hr {
   }
 }
 
-/* FOOTER */
+/* -------------------------------------- FOOTER -------------------------------------- */
 
 footer {
   background-color: #222222;
@@ -202,7 +388,7 @@ footer {
   padding: 2%;
 }
 
-#nav_footer ul{
+#nav_footer ul {
   list-style: none;
 }
 
@@ -234,7 +420,7 @@ footer {
   text-align: center;
 }
 
-/* Footer mobile */
+/* **************************** Footer mobile *************************** */
 @media screen and (max-width: 767px) {
   footer {
     display: block;
@@ -254,11 +440,11 @@ footer {
     text-align: left;
   }
   #nav_footer,
- .texte_footer {
-  display: flex;
-  flex-direction: column;
-  margin-left: 0rem;
-  color: #e3e3e3;
-  width: 100%;
+  .texte_footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0rem;
+    color: #e3e3e3;
+    width: 100%;
   }
 }
