@@ -52,30 +52,6 @@ body {
   font-size: 3rem;
 }
 
-@media screen and (min-width: 400px) {
-  .thumbnail {
-    display: flex;
-  }
-  #content-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: left;
-    margin-right: 6rem;
-  }
-  #featured {
-    display: flex;
-    width: 100%;
-    margin-bottom: -5rem;
-  }
-  .logo {
-    display: flex !important;
-  }
-  .banner {
-    height: 10rem !important;
-  }
-}
-
 footer {
   background-color: #222222;
   display: flex;
@@ -118,8 +94,11 @@ footer {
   text-align: center;
 }
 
-
 @media screen and (max-width: 767px) {
+  .thumbnail {
+    display: flex;
+  }
+
   #content-wrapper {
     display: flex;
     flex-wrap: wrap;
