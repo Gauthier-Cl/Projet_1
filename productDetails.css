@@ -52,6 +52,13 @@ body {
   font-size: 3rem;
 }
 
+.logo {
+    display: flex !important;
+  }
+  .banner {
+    height: 10rem !important;
+  }
+  
 footer {
   background-color: #222222;
   display: flex;
@@ -94,8 +101,10 @@ footer {
   text-align: center;
 }
 
+
 @media screen and (max-width: 767px) {
-  .thumbnail {
+  
+ .thumbnail {
     display: flex;
   }
 
@@ -142,3 +151,4 @@ footer {
     width: 100%;
   }
 }
+
