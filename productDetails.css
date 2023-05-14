@@ -26,12 +26,10 @@ body {
 }
 #featured {
   width: 100%;
-
   justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-
   border: 2px solid black;
 }
 
@@ -53,12 +51,12 @@ body {
 }
 
 .logo {
-    display: flex !important;
-  }
-  .banner {
-    height: 10rem !important;
-  }
-  
+  display: flex !important;
+}
+.banner {
+  height: 10rem !important;
+}
+
 footer {
   background-color: #222222;
   display: flex;
@@ -101,10 +99,8 @@ footer {
   text-align: center;
 }
 
-
 @media screen and (max-width: 767px) {
-  
- .thumbnail {
+  .thumbnail {
     display: flex;
   }
 
@@ -151,4 +147,3 @@ footer {
     width: 100%;
   }
 }
-
