@@ -69,3 +69,8 @@ model.textContent = bikeBis.model;
 
 const featured = document.getElementById("featured");
 featured.src = bikeBis.image;
+
+const homeButton = document.getElementById("home-button");
+homeButton.addEventListener("click", function () {
+  document.location.href = "index.html";
+});
